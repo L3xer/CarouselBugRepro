@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CarouselBugRepro"
-             x:Class="CarouselBugRepro.MainPage">
+             x:Class="CarouselBugRepro.MainPage"
+             Title="Main page">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Button Text="Page 1" Clicked="Button_Clicked"  />
+        <Button Text="Page 2" Clicked="Button_Clicked_1"  />
+    </StackLayout>
 
 </ContentPage>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CarouselBugRepro
 {
@@ -13,7 +8,7 @@ namespace CarouselBugRepro
         {
             InitializeComponent();
 
-            MainPage = new CarouselBugRepro.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
